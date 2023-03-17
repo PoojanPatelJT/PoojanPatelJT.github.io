@@ -1,0 +1,47 @@
+{
+    "footer": {
+        "title": {
+            "trendingServices": {
+                "label": "Trending Services",
+                "data": [
+                    "Web Application Development",
+                    "Mobile Apps Development",
+                    "On-Demand App Development",
+                    "Hire Development Team",
+                    "eCommerce App Development"
+                ]
+            },
+            "technologies": {
+                "label": "Technologies",
+                "data": [
+                    "Web Application Development",
+                    "Mobile Apps Development",
+                    "On-Demand App Development",
+                    "Hire Development Team",
+                    "eCommerce App Development"
+                ]
+            },
+            "on-DemandSolution": {
+                "label": "On-Demand Solution",
+                "data": [
+                    "Grocery Delivery App",
+                    "Taxi Booking App",
+                    "eLearning App",
+                    "Restaurant Booking App",
+                    "Food Delivery App"
+                ]
+            },
+            "company": {
+                "label": "Company",
+                "data": [
+                    "About Us",
+                    "Jobs We are Hiring!",
+                    "Why Us?",
+                    "Blog",   
+                    "Portfolio"
+                ]
+            }
+        },
+        "copyright": "Copyright © 2023 Jyoti Technosoft LLP. All Rights Reserved by jyotitechnosoft.com" 
+    }
+}
