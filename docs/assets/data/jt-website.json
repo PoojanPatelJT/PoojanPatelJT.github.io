@@ -1,47 +1,268 @@
 {
-    "footer": {
-        "title": {
-            "trendingServices": {
-                "label": "Trending Services",
-                "data": [
-                    "Web Application Development",
-                    "Mobile Apps Development",
-                    "On-Demand App Development",
-                    "Hire Development Team",
-                    "eCommerce App Development"
-                ]
-            },
-            "technologies": {
-                "label": "Technologies",
-                "data": [
-                    "Web Application Development",
-                    "Mobile Apps Development",
-                    "On-Demand App Development",
-                    "Hire Development Team",
-                    "eCommerce App Development"
-                ]
-            },
-            "on-DemandSolution": {
-                "label": "On-Demand Solution",
-                "data": [
-                    "Grocery Delivery App",
-                    "Taxi Booking App",
-                    "eLearning App",
-                    "Restaurant Booking App",
-                    "Food Delivery App"
-                ]
-            },
-            "company": {
-                "label": "Company",
-                "data": [
-                    "About Us",
-                    "Jobs We are Hiring!",
-                    "Why Us?",
-                    "Blog",   
-                    "Portfolio"
-                ]
-            }
+  "hireUs": {
+    "technology": [
+      {
+        "id": "angular",
+        "label": "Angular developement",
+        "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business.",
+        "image": "assets/images/angular.png",
+        "services": [
+          {
+            "header": "Custom Developement",
+            "icon": "assets/images/Custom-AngularJS-Web-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "Plugin Development",
+            "icon": "assets/images/Plugin-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "Maintenance & Support",
+            "icon": "assets/images/Support-Maintainence.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "API Integration and Development",
+            "icon": "assets/images/API-Integration-and-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          }
+        ]
+      },
+      {
+        "id": "react",
+        "label": "React developement",
+        "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business.",
+        "image": "assets/images/overlay1258.png",
+        "services": [
+          {
+            "header": "Custom Developement",
+            "icon": "assets/images/Custom-AngularJS-Web-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "Plugin Development",
+            "icon": "assets/images/Plugin-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "Maintenance & Support",
+            "icon": "assets/images/Support-Maintainence.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "API Integration and Development",
+            "icon": "assets/images/API-Integration-and-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          }
+        ]
+      },
+      {
+        "id": "java",
+        "label": "Java developement",
+        "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business.",
+        "image": "assets/images/angular.png",
+        "services": [
+          {
+            "header": "Custom Developement",
+            "icon": "assets/images/Custom-AngularJS-Web-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "Plugin Development",
+            "icon": "assets/images/Plugin-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "Maintenance & Support",
+            "icon": "assets/images/Support-Maintainence.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          },
+          {
+            "header": "API Integration and Development",
+            "icon": "assets/images/API-Integration-and-Development.svg",
+            "decription": "We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. JYOTI TECHNOSOFT is an <b>Angular development company</b> that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business."
+          }
+        ]
+      }
+    
+    ]
+  },
+
+  "footer": {
+    "title": {
+      "trendingServices": {
+        "label": "Trending Services",
+        "data": [
+          "Web Application Development",
+          "Mobile Apps Development",
+          "On-Demand App Development",
+          "Hire Development Team",
+          "eCommerce App Development"
+        ]
+      },
+      "technologies": {
+        "label": "Technologies",
+        "data": [
+          "Web Application Development",
+          "Mobile Apps Development",
+          "On-Demand App Development",
+          "Hire Development Team",
+          "eCommerce App Development"
+        ]
+      },
+      "on-DemandSolution": {
+        "label": "On-Demand Solution",
+        "data": [
+          "Grocery Delivery App",
+          "Taxi Booking App",
+          "eLearning App",
+          "Restaurant Booking App",
+          "Food Delivery App"
+        ]
+      },
+      "company": {
+        "label": "Company",
+        "data": [
+          "About Us",
+          "Jobs We are Hiring!",
+          "Why Us?",
+          "Blog",
+          "Portfolio"
+        ]
+      }
+    },
+    "copyright": "Copyright © 2023 Jyoti Technosoft LLP. All Rights Reserved by jyotitechnosoft.com"
+  },
+  "technologyStack": [
+    {
+      "id": "frontend",
+      "label": "FRONTEND",
+      "lang": [
+        {
+          "label": "D3",
+          "imgSrc": "assets/images/D3.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
         },
-        "copyright": "Copyright © 2023 Jyoti Technosoft LLP. All Rights Reserved by jyotitechnosoft.com" 
+        {
+          "label": "Angular",
+          "imgSrc": "assets/images/Angular.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "React",
+          "imgSrc": "assets/images/React.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "GWT",
+          "imgSrc": "assets/images/GWT.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "JAVA",
+          "imgSrc": "assets/images/java.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "DHTML",
+          "imgSrc": "assets/images/html02.png",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "BACKEND",
+      "lang": [
+        {
+          "label": "JAVA/J2EE",
+          "imgSrc": "assets/images/java.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "Node JS",
+          "imgSrc": "assets/images/nodejs.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "LARAVEL",
+          "imgSrc": "assets/images/Laravel.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "SPRING",
+          "imgSrc": "assets/images/spring.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "label": "DATABASE",
+      "lang": [
+        {
+          "label": "MySQL",
+          "imgSrc": "assets/images/mysql.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "Influx",
+          "imgSrc": "assets/images/influx.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "Postgress sql",
+          "imgSrc": "assets/images/postgress-sql.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        },
+        {
+          "label": "MongoDB",
+          "imgSrc": "assets/images/mongoDB.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "MOBILE",
+      "lang": [
+        {
+          "label": "React Native",
+          "imgSrc": "assets/images/React.svg",
+          "id": "",
+          "tooltip": "",
+          "referenceLink": ""
+        }
+      ]
     }
+  ]
 }
