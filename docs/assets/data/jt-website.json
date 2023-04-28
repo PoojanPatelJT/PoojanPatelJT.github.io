@@ -264,5 +264,37 @@
         }
       ]
     }
+  ],
+  "developmentProcess" :[
+    {
+      "index": 1,
+      "title": "Requirement Gethering",
+      "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+      "imageSrc": "assets/images/development-process/workflow1.svg"
+    },
+    {
+      "index": 2,
+      "title": "Ui/Ux Development",
+      "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+      "imageSrc": "assets/images/development-process/workflowStep2.svg"
+    },
+    {
+      "index": 3,
+      "title": "Development of Process",
+      "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+      "imageSrc": "assets/images/development-process/workflowStep3.svg"
+    },
+    {
+      "index": 4,
+      "title": "Deployment of App",
+      "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+      "imageSrc": "assets/images/development-process/workflowStep4.svg"
+    },
+    {
+      "index": 4,
+      "title": "Review from Clients",
+      "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+      "imageSrc": "assets/images/development-process/workflowStep5.svg"
+    }
   ]
 }
