@@ -1,0 +1,102 @@
+<!-- <div class="container">
+  <div class="main-title right-line mt-5">
+    <h2>TECHNOLOGY <strong class="text-skyblue">STACK</strong></h2>
+  </div>
+  <ul
+    class="nav tab-list d-flex justify-content-center"
+    id="pills-tab"
+    role="tablist"
+  >
+    <ng-container *ngFor="let item of technology">
+      <li class="nav-item m-2" role="presentation">
+        <button
+          class="tech-btn text-color px-4 py-2"
+          [class.active]="selectedTechnology.id === item?.id"
+          data-toggle="pill"
+          href="#stack-1"
+          role="tab"
+          aria-controls="Frontend"
+          aria-selected="true"
+          (click)="onChange(item)"
+        >
+          {{ item.label }}
+        </button>
+      </li></ng-container
+    >
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade active show" id="stack-1" role="tabpanel">
+      <div
+        class="tech-logo-images row text-center d-flex justify-content-center"
+      >
+        <div
+          class="tech-logo-details col-lg-2 col-md-2 col-sm-6 p-4 my-3"
+          *ngFor="let data of selectedTechnology?.lang"
+        >
+          <img src="{{ data?.imgSrc }}" alt="" class="img-responsive" />
+          <div class="tech-name">{{ data?.label }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container">
+  <div class="row mt-5 pt-5 mb-5 pb-5"  style="height: 500px;">
+    <div class="col-lg-6 col-md-12 ">
+    <div>
+      <h2 class="title">Our Development Process</h2>
+      <p class="mt-3">To accomplish defined goals and results within budget and deadlines, development methodology plays a key role. At Prismetric, we know, design, plan, execute and accomplish your project purposes with the perfect development methodology that suits your requirements.</p>
+    </div>
+
+    </div>
+    <div class="col-lg-6 col-md-12 d-flex justify-content-flex-end" style="margin-top: 20%;">
+     <div  class="stack-position">
+      <div class="position-absolute" [class.remove-hover]="mouseselectoptoin || mouseselectoptoin == !'item'" >
+        <svg width="443" height="269" (mouseover)="mouseselect('item')" (mouseout)="mouseselect('item')" style="cursor: pointer;" viewBox="0 0 443 269" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M205.113 4.36343C214.299 -1.25925 229.788 -1.25842 238.972 4.36524L435.742 124.852C444.195 130.028 444.194 138.112 435.739 143.287L237.487 264.636C228.301 270.259 212.812 270.258 203.628 264.635L6.85829 144.148C-1.5952 138.972 -1.5939 130.888 6.86125 125.713L205.113 4.36343Z" fill="#77797b" fill-opacity="0.7"></path></svg>
+      </div>
+      <div class="position-absolute" [class.remove-hover]="mouseselectoptoin == !'select2' || mouseselectoptoin">
+        <svg width="443" (mouseover)="mouseselect('select2')" style="cursor: pointer;" (mouseout)="mouseselect('select2')" height="269" viewBox="0 0 443 269" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M205.113 4.36343C214.299 -1.25925 229.788 -1.25842 238.972 4.36524L435.742 124.852C444.195 130.028 444.194 138.112 435.739 143.287L237.487 264.636C228.301 270.259 212.812 270.258 203.628 264.635L6.85829 144.148C-1.5952 138.972 -1.5939 130.888 6.86125 125.713L205.113 4.36343Z" fill="#77797b" fill-opacity="0.7"></path></svg>
+      </div>
+      <div class="position-absolute " [class.remove-hover]="mouseselectoptoin == !'select3' || mouseselectoptoin">
+        <svg width="443" height="269" viewBox="0 0 443 269" (mouseover)="mouseselect('select3')" style="cursor: pointer;" (mouseout)="mouseselect('select3')" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M205.113 4.36343C214.299 -1.25925 229.788 -1.25842 238.972 4.36524L435.742 124.852C444.195 130.028 444.194 138.112 435.739 143.287L237.487 264.636C228.301 270.259 212.812 270.258 203.628 264.635L6.85829 144.148C-1.5952 138.972 -1.5939 130.888 6.86125 125.713L205.113 4.36343Z" fill="#77797b" fill-opacity="0.7"></path></svg>
+      </div>
+      <div class="position-absolute" [class.remove-hover]="mouseselectoptoin == 'item'">
+        <svg width="443" height="269" viewBox="0 0 443 269" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M205.113 4.36343C214.299 -1.25925 229.788 -1.25842 238.972 4.36524L435.742 124.852C444.195 130.028 444.194 138.112 435.739 143.287L237.487 264.636C228.301 270.259 212.812 270.258 203.628 264.635L6.85829 144.148C-1.5952 138.972 -1.5939 130.888 6.86125 125.713L205.113 4.36343Z" fill="#77797b" fill-opacity="0.7"></path></svg>
+      </div>
+     </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 justify-content-center d-flex align-items-center">
+      <div class="section-title style-two mb-0 p-5">
+        <h2 class="title">Our Development Process</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 mt-5">
+      <section class="timeline">
+        <ul>
+          <ng-container *ngFor="let item of processDevelopment">
+            <li>
+              <div class="flip">
+                <div
+                  class="front"
+                  style="background-image: url({{item.imageSrc}}); box-shadow: none;"
+                ></div>
+                <div class="back">
+                  <h3 style="color: #367dc8">{{ item.title }}</h3>
+                  <p>
+                    Good tools make application development quicker and easier
+                    to maintain than if you did everything by hand..
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ng-container>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>

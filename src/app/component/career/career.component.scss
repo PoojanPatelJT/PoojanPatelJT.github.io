@@ -1,0 +1,114 @@
+$base-text-color: #a3c742;
+$header-text-color: #3a7dc8;
+
+.d-block {
+  display: block !important;
+}
+
+.career-banner-wrap {
+  float: right;
+  position: relative;
+  right: 6rem;
+}
+
+.career-banner-wrap h1 {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 100px);
+  z-index: 0;
+  color: $base-text-color;
+  width: 100%;
+  max-width: 100%;
+}
+
+.search-location-form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  grid-gap: 30px;
+
+  .dropdown-input {
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #121319;
+}
+
+.careers-experience {
+  color: $base-text-color;
+}
+
+.fit-content {
+  min-height: 96.4% !important;
+}
+
+.header-title {
+  color: $header-text-color;
+}
+
+.detail-view {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #121319;
+}
+
+.skill-set-list {
+  border-radius: 100px !important;
+}
+
+.mat-mdc-list-base {
+  &.mdc-list-item__content {
+    pointer-events: auto;
+    /* position: sticky; */
+    position: relative !important;
+    bottom: 4px !important;
+  }
+}
+
+.icon-size {
+  font-size: 10px;
+  align-items: center;
+}
+
+.border-0 {
+  border-radius: 20px;
+  min-width: 125px;
+  min-height: 44px;
+}
+
+.bg-color {
+  background-color: #3a7dc81f;
+  color: $base-text-color;
+  font-weight: 400;
+}
+
+.mdc-list-item__primary-text {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  word-break: break-all !important;
+  word-break: break-word !important;
+  text-overflow: unset !important;
+  white-space: unset !important ;
+  overflow: unset !important;
+  display: inline-flex !important;
+}
+
+.mdc-list-item__content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  text-overflow: unset !important;
+  white-space: unset !important ;
+  overflow: unset !important;
+}

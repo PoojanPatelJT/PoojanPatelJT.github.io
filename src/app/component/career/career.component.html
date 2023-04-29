@@ -1,0 +1,127 @@
+<!-- src="../../../assets/images/career123.png" -->
+<div class="career-banner-wrap">
+  <img
+    src="https://www.toptal.com/developers/img-resize/view/190323928d66d26aee5e499601ba447e.png"
+    class="img-fluid entered lazyloaded"
+    alt="Career"
+    data-lazy-src="assets/images/hiring.png"
+    data-ll-status="loaded"
+  />
+  <img
+    src="../../../assets/images/career12.png"
+    class="img-fluid entered lazyloaded"
+    alt="Career"
+    data-lazy-src="assets/images/career12.png"
+    data-ll-status="loaded"
+  />
+  <noscript
+    ><img
+      src="../../../assets/images/career12.png"
+      class="img-fluid"
+      alt="Career"
+  /></noscript>
+</div>
+
+<section class="main-section career-block padding-top col-12">
+  <div class="container mt-3">
+    <div class="search-location-form col-12 mb-3">
+      <div class="form-group select-location-input col-3">
+        <div id="filtering" class="custom-html-dropdown" role="navigation">
+          <button
+            class="dropdown-input cat-all col-12 p-2"
+            type="button"
+            id="job-location"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Location
+          </button>
+        </div>
+      </div>
+      <div class="form-search-block col-9">
+        <div class="row">
+          <div class="col-9">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="jobInput"
+                placeholder="Keywords (ex php developer)"
+                (input)="onSearch($event)"
+                [(ngModel)]="searchedCareer"
+              />
+            </div>
+          </div>
+          <div class="col-3">
+            <button (click)="showAll()" class="btn btn-primary w-100">
+              Show All Jobs
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="careers-skills-block col-12 d-flex mb-5">
+      <div class="col-3 py-0">
+        <mat-card
+          class="careers-items-list filter-job-results mt-4"
+          *ngFor="let careersItem of filterCareer"
+          (click)="onSelect(careersItem)"
+        >
+          <mat-card-header>
+            <mat-card-title class="header-title">{{
+              careersItem.position.label
+            }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="careers-experience">{{
+            careersItem.experience
+          }}</mat-card-content>
+        </mat-card>
+      </div>
+      <div class="careers-content-block col-9 mx-3">
+        <mat-card
+          class="careers-items-list filter-job-results mt-4 fit-content mx-3 w-100"
+        >
+          <mat-card-header>
+            <mat-card-title class="header-title detail-view">{{
+              selectedCareer.position.label
+            }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="careers-experience">
+            {{ selectedCareer.experience }}
+            <mat-list>
+              <mat-list-item
+                *ngFor="let item of selectedCareer.requireLang"
+                class="w-auto d-inline-block p-3 m-1 border text-center skill-set-list"
+              >
+                <span> {{ item }} </span>
+              </mat-list-item>
+            </mat-list>
+            <div *ngFor="let item of selectedCareer.role">
+              <h5>{{ item.label }}</h5>
+              <mat-list>
+                <mat-list-item
+                  *ngFor="let data of item?.objectives"
+                  class="h-auto"
+                >
+                  <div class="d-flex">
+                    <mat-icon matListIcon class="icon-size d-inline-flex"
+                      >lens</mat-icon
+                    >
+                    <div class="mx-2">{{ data.responsiblity }}</div>
+                  </div>
+                </mat-list-item>
+              </mat-list>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="bg-color border-0" (click)="applyForjob()">
+                Apply now
+              </button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

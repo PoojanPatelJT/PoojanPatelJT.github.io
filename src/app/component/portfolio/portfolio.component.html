@@ -1,0 +1,191 @@
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="text-center">
+        <div class="header-title mb-3">
+          <h2>Portfolio</h2>
+        </div>
+        <p>
+          Jyoti Technosoft is the appropriate destination if you are seeking
+          services related to professional custom development, web development,
+          or mobile app development.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-center align-items-center mt-4">
+      <div
+        class="portfolio-menu"
+        style="visibility: visible; animation-name: fadeIn"
+      >
+        <ng-container *ngFor="let data of sliderdata">
+          <ul>
+            <li
+              class="filter"
+              [ngClass]="selectedTechnology == data.title ? 'active' : ''"
+              (click)="selectedTechnology = data.title"
+            >
+              {{ data.title }}
+            </li>
+          </ul>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div
+    class="row portfolio-gallery mt-5"
+    style="position: relative; height: 867.609px"
+  >
+    <div
+      class="single-portfolio col-md-4 col-lg-4 col-sm-6 col-xs-12 branding"
+      style="position: absolute; left: 0px; top: 0px"
+    >
+      <div
+        class="single-portfolio-details mb30 wow fadeInUp"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        <div class="portfolio-img">
+          <img src="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-4.jpg" alt="" />
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-view-details">
+            <a
+              class="portfolio-big-thumb vbox-item"
+              href="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-1.jpg"
+              data-effect="mfp-zoom-in"
+              ><i class="fa fa-expand"></i
+            ></a>
+          </div>
+          <p>Design &amp; Develop</p>
+          <h4>Brand Identity</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="single-portfolio col-md-4 col-lg-4 col-sm-6 col-xs-12 graphic"
+      style="position: absolute; left: 375px; top: 0px"
+    >
+      <div
+        class="single-portfolio-details mb30 wow fadeInUp"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        <div class="portfolio-img">
+          <img src="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-5.jpg" alt="" />
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-view-details">
+            <a
+              class="portfolio-big-thumb vbox-item"
+              href="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-2.jpg"
+              data-effect="mfp-zoom-in"
+              ><i class="fa fa-expand"></i
+            ></a>
+          </div>
+          <p>Design &amp; Develop</p>
+          <h4>Brand Identity</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="single-portfolio col-md-4 col-lg-4 col-sm-6 col-xs-12 marketing"
+      style="position: absolute; left: 0px; top: 289px"
+    >
+      <div
+        class="single-portfolio-details mb30 wow fadeInUp"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        <div class="portfolio-img">
+          <img src="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-6.jpg" alt="" />
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-view-details">
+            <a
+              class="portfolio-big-thumb vbox-item"
+              href="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-3.jpg"
+              data-effect="mfp-zoom-in"
+              ><i class="fa fa-expand"></i
+            ></a>
+          </div>
+          <p>Design &amp; Develop</p>
+          <h4>Brand Identity</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="single-portfolio col-md-4 col-lg-4 col-sm-6 col-xs-12 branding"
+      style="position: absolute; left: 375px; top: 289px"
+    >
+      <div
+        class="single-portfolio-details mb30 wow fadeInUp"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        <div class="portfolio-img">
+          <img src="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-7.jpg" alt="" />
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-view-details">
+            <a
+              class="portfolio-big-thumb vbox-item"
+              href="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-4.jpg"
+              data-effect="mfp-zoom-in"
+              ><i class="fa fa-expand"></i
+            ></a>
+          </div>
+          <p>Design &amp; Develop</p>
+          <h4>Brand Identity</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="single-portfolio col-md-4 col-lg-4 col-sm-6 col-xs-12 graphic"
+      style="position: absolute; left: 0px; top: 578px"
+    >
+      <div
+        class="single-portfolio-details mb30 wow fadeInUp"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        <div class="portfolio-img">
+          <img src="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-8.jpg" alt="" />
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-view-details">
+            <a
+              class="portfolio-big-thumb vbox-item"
+              href="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-5.jpg"
+              data-effect="mfp-zoom-in"
+              ><i class="fa fa-expand"></i
+            ></a>
+          </div>
+          <p>Design &amp; Develop</p>
+          <h4>Brand Identity</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="single-portfolio col-md-4 col-lg-4 col-sm-6 col-xs-12 marketing"
+      style="position: absolute; left: 375px; top: 578px"
+    >
+      <div
+        class="single-portfolio-details mb30 wow fadeInUp"
+        style="visibility: visible; animation-name: fadeInUp"
+      >
+        <div class="portfolio-img">
+          <img src="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-9.jpg" alt="" />
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-view-details">
+            <a
+              class="portfolio-big-thumb vbox-item"
+              href="https://quomodosoft.com/html/hooper/hooper/assets/img/portfolio/portfolio-6.jpg"
+              data-effect="mfp-zoom-in"
+              ><i class="fa fa-expand"></i
+            ></a>
+          </div>
+          <p>Design &amp; Develop</p>
+          <h4>Brand Identity</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+body {
+  margin: 0px !important;
+}
+* {
+  font-family: Oswald;
+}
+.header-title {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  color: #222222;
+  h2 {
+    &::before,
+    &::after {
+      content: "";
+      width: 50px;
+      margin: 0 15px 10px 15px;
+      height: 2px;
+      background: #3498db;
+      display: inline-block;
+    }
+  }
+}

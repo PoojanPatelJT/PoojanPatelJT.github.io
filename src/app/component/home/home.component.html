@@ -1,0 +1,85 @@
+<!-- HomeContainer -->
+<div class="container min-vh-100">
+  <div class="row mt-5">
+    <div class="col-sm-12 col-md-12 col-lg-6 mt-5">
+      <ngb-carousel
+        [showNavigationArrows]="false"
+        [showNavigationIndicators]="false"
+      >
+        <ng-template ngbSlide *ngFor="let card of cardContent">
+          <div class="d-flex justify-content-center">
+            <div class="cards">
+              <div class="card_box">
+                <div class="card_inside mt-2 mb-2">
+                  <div class="hover_color_bubble"></div>
+                  <div class="card_title d-flex justify-content-around mt-2">
+                    <h3>{{ card.cardHeader }}</h3>
+                  </div>
+                  <div class="card_description p-3">
+                    <p>
+                      Jyoti Technosoft LLP is a professional software
+                      development company that offers a wide range of IT
+                      services. The aim of our software development company is
+                      to catch both the requirements and expectations of
+                      consumers, so we develop both for mobile development and
+                      the web. Developing both platforms is delicate, but with
+                      the proper frame and tools, it's possible to make this
+                      process a little easier. Our team of developers is
+                      well-versed in NativeScript and Angular consequently they
+                      can produce apps for different platforms. For a business,
+                      both are essential like a website which is required both
+                      for the progression and the cast of the point.
+                    </p>
+                    <button type="button" class="read_more_btn">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-6">
+      <img
+        class="img-fluid opacity-100"
+        src="assets/images/background.png"
+        alt="BG"
+      />
+    </div>
+  </div>
+  <ul class="circles">
+    <ng-container *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+      <li></li>
+    </ng-container>
+  </ul>
+</div>
+<!-- End of HomeContainer -->
+<!-- start of hire Developer -->
+<div class="container">
+  <h1>Hire Us in your required field</h1>
+  <div class="row">
+    <ng-container *ngFor="let card of hireUsContent">
+      <div class="col-md-6 col-lg-4 column service-column">
+        <div class="card service-card">
+          <div class="txt">
+            <h1>{{ card.cardHeader }}</h1>
+            <p>{{ card.cardData }}</p>
+          </div>
+          <a routerLink="">more</a>
+          <div class="ico-card"></div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+<!-- end of hire Developer -->
+
+<!-- Our Technology -->
+<app-jt-technology></app-jt-technology>
+<!-- Our Technology -->
+
+<!-- Client review -->
+<app-client-review></app-client-review>
+<!-- Client review -->
