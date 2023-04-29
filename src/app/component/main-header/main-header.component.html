@@ -1,0 +1,37 @@
+<header>
+  <div #mainNavbar class="heder-container fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a><img src="assets/images/logo.png" alt="logo" height="50px" /></a>
+      </div>
+      <nav id="navbar" class="navbar" #navBarMobile>
+        <ul>
+          <ng-container *ngFor="let item of menuItems">
+            <li [class.dropdown]="item?.subItems?.length > 0">
+              <a
+                class="nav-link scrollto dropdown"
+                [routerLink]="item?.routerlink"
+                routerLinkActive="active"
+                >{{ item?.label }}
+              </a>
+              <ng-container *ngIf="item?.subItems?.length">
+                <ul>
+                  <li class="nav-item" *ngFor="let subItem of item?.subItems">
+                    <a
+                      class="nav-link"
+                      routerLink="/{{ subItem?.routerlink }}"
+                      [queryParams]="{ tech: subItem?.id }"
+                      >{{ subItem?.label }}</a
+                    >
+                  </li>
+                </ul>
+              </ng-container>
+            </li>
+          </ng-container>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" (click)="showHeader()"></i>
+        <i class="bi bi-x-lg  mobile-nav-toggle-close" (click)="showHeader()"></i>
+      </nav>
+    </div>
+  </div>
+</header>

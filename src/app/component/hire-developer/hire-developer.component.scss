@@ -1,0 +1,44 @@
+.img-responsive {
+    border-radius: 0px 50% 50% 0px;
+    height: 80vh !important;
+    width: 97% !important;
+    max-height: 380px !important;
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+.example-header-image {
+    background-image: url("https://www.narolainfotech.com/wp-content/uploads/2022/09/Migration-and-upgradation.svg");
+    background-size: cover;
+    margin-bottom: 13px !important;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 0% !important;
+} 
+
+.mat-mdc-card-header-text {
+    margin: auto !important;
+}
+
+
+.mdc-card:nth-child(2) {
+    margin-left: 0px !important;
+}
+
+.mat-mdc-card-title {
+    margin-top: 1vh;
+    h6 {
+        // font-size: 4vh !important;
+        // max-width: ;
+    }
+}
+ 
+.mdc-card {
+    width: 48.2% !important;
+}
+
+.mdc-card:nth-child(2n-1) {
+    margin-right: 46px !important
+}

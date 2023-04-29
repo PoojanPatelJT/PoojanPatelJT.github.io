@@ -1,0 +1,140 @@
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: #222222;
+  h2 {
+    &::before,
+    &::after {
+      content: "";
+      width: 50px;
+      margin: 0 15px 10px 15px;
+      height: 2px;
+      background: #3498db;
+      display: inline-block;
+    }
+  }
+}
+
+.card {
+	display: block;
+	position: relative;
+	background-color: #ffff;
+	border-radius: 4px;
+	padding: 32px 24px;
+	margin: 12px;
+	text-decoration: none;
+	border:none !important;
+	z-index: 0;
+	overflow: hidden;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.05rem;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15);
+	.go-corner {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  position: absolute;
+	  width: 32px;
+	  height: 32px;
+	  overflow: hidden;
+	  top: 0;
+	  right: 0;
+	  background-color: #e1e5f8;
+	  border-radius: 0 4px 0 32px;
+	}
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -10px;
+    background: #e1e5f8;
+    height: 32px;
+    width: 41px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.30s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+    width: 50px;
+
+  }
+}
+
+
+.services-achievement {
+	padding-top: 0;
+	.content {
+		padding: 0;
+		h3 {
+			font-weight: 700;
+			font-size: 34px;
+			color: #222222;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		.count-box {
+			padding: 20px 0;
+			width: 100%;
+			i {
+				display: block;
+				font-size: 36px;
+				color: #3498db;
+				float: left;
+				line-height: 0;
+			}
+			span {
+				font-size: 36px;
+				line-height: 30px;
+				display: block;
+				font-weight: 700;
+				color: #222222;
+				margin-left: 50px;
+			}
+			p {
+				padding: 15px 0 0 0;
+				margin: 0 0 0 50px;
+				font-size: 14px;
+				color: #484848;
+			}
+			a {
+				font-weight: 600;
+				display: block;
+				margin-top: 20px;
+				color: #484848;
+				font-size: 15px;
+				transition: ease-in-out 0.3s;
+				&:hover {
+					color: #6f6f6f;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.services-achievement {
+		.image {
+			text-align: center;
+			img {
+				max-width: 70%;
+			}
+		}
+	}
+}
+@media (max-width: 667px) {
+	.services-achievement {
+		.image {
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}

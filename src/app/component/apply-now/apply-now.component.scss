@@ -1,0 +1,46 @@
+$secoundary-color: #a3c742;
+$primary-color: #3a7dc8;
+$base-color: #4f4c4d;
+
+.text-weight {
+  font-weight: 300;
+  color: $base-color;
+}
+
+.bg-color {
+  background-color: $secoundary-color;
+}
+
+.text-color {
+  color: $base-color;
+}
+
+.send-btn {
+  width: 150px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-color {
+  background-color: #fff;
+}
+
+.mat-mdc-text-field-wrapper {
+  background-color: #ffff !important;
+}
+
+.from-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: normal;
+  margin-top: 25px;
+}
+
+.upload-file {
+  font-size: 24px;
+  border: 1px dotted #3d81ca !important;
+  padding: 11px;
+  border-style: dashed !important;
+}

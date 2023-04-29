@@ -1,0 +1,47 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6 px-0">
+      <img class="img-responsive" src="{{ technologyInfo?.image }}" alt="logo" />
+    </div>
+    <div class="col-md-6 p-5 m-auto">
+      <h1>{{this.technologyInfo?.label}}</h1>
+      <p>
+       {{technologyInfo?.decription}}
+      </p>
+      <a class="btn btn-outline-secondary"  [routerLink]="['../', 'contact-us']">Contact us</a>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-12">
+    <h2>Why Hire AngularJS Developers For Business?</h2>
+    <p>
+      AngularJS is a framework supported by Google to enable you to enhance well-architectured and simply maintainable web applications. It can improve the build of various interactive factors commonly on a website. The main goal is to promote single-page applications. The focus is more on the features of testability and quality. This is why most developers prefer AngularJS over other frameworks. Popular web applications that use AngularJS include Paypal, Udemy, Amazon, Snapchat, Gmail, and Netflix. Hire Angular JS Developers as per your needs.
+    </p>
+  </div>
+  <div class="col-md-12 col-12">
+    <h3>{{'Angular Developement Services'}}</h3>
+    <p>
+      We offer reliable AngularJS mobile app development to build highly scalable and secure applications. By using our Angular development expertise, you can elevate your web presence goals and watch as your business objectives are translated into technical solutions. Narola Infotech is an AngularJS development company that offers customized Angular development services to suit your business needs. Along with our maintenance and support services, you will never have to worry about the technical aspects, giving you more time to focus on expanding your business.
+    </p>
+  </div>
+  <div class="row mt-5 justify-content: space-between">
+    <mat-card class="card mb-5" *ngFor="let data of technologyInfo?.services">
+      <mat-card-header>
+        <div
+          mat-card-avatar
+          class="example-header-image"
+          
+          [style]="{backgroundImage: 'url(' + data.icon + ')'}"
+        ></div>
+        <mat-card-title>
+          <h3>{{data.header}}</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{data?.decription}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

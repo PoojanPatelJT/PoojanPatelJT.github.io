@@ -1,0 +1,90 @@
+<div class="mt-5">
+  <div
+    class="max-w-1200 mx-auto row justify-content-center no-gutters align-items-center h-100 py-2 bg-color"
+  >
+    <div class="col-md-10 col-sm-12">
+      <h1 class="text-color" title="">
+        {{ "2+ Yr Exp." }}{{ selectedRole?.label }}
+      </h1>
+      <p class="m-0 text-uppercase font-small d-flex align-items-center">
+        <span></span>
+        <span class="mx-2 dot dot-xs bg-white-light"></span>
+        <span>Full-Time</span>
+        <span class="mx-2 dot dot-xs bg-white-light"></span>
+        <span>Surat</span>
+      </p>
+    </div>
+  </div>
+  <form
+    class="form-color"
+    *ngIf="applyForm"
+    (ngSubmit)="OnSubmit()"
+    [formGroup]="applyForm"
+  >
+    <div class="row col-9 m-auto pt-5">
+      <div class="col-3 from-title">Position</div>
+      <div class="col-9">
+        <mat-form-field appearance="fill" class="example-full-width col-12">
+          <mat-label class="form-label">Select a Position</mat-label>
+          <mat-select>
+            <ng-container *ngFor="let optionData of position">
+              <mat-option value="optionData?.value">{{
+                optionData?.label
+              }}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-3 from-title">Personal Information</div>
+      <div class="col-9">
+        <mat-form-field class="example-full-width col-12">
+          <mat-label class="text-weight">Full Name</mat-label>
+          <input formControlName="fullName" matInput placeholder="" value="" />
+        </mat-form-field>
+        <div class="d-flex justify-content-between">
+          <mat-form-field class="example-full-width col-6">
+            <mat-label class="text-weight">Email Id</mat-label>
+            <input
+              matInput
+              formControlName="email_id"
+              placeholder="jhon@gmail.com"
+              value=""
+            />
+          </mat-form-field>
+          <mat-form-field class="example-full-width col-5">
+            <mat-label class="text-weight">Phone Number</mat-label>
+            <input
+              matInput
+              placeholder="+91 9876543214"
+              value=""
+              formControlName="mobile_no"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-3 from-title">Attach Resume</div>
+      <div class="col-9">
+        <input
+          type="file"
+          formControlName="attached_resume"
+          name=""
+          id=""
+          class="col-12 my-3 upload-file"
+        />
+        <span class="text-weight">
+          Please attach JPG, PNG and PDF (Max Filesize 5MB)
+        </span>
+      </div>
+      <div class="col-12 d-flex justify-content-end mt-3">
+        <re-captcha
+          formControlName="recaptcha"
+          (resolved)="resolved($event)"
+          siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"
+        ></re-captcha>
+      </div>
+      <div class="col-12 d-flex justify-content-end py-3">
+        <button type="submit" class="send-btn">Send</button>
+      </div>
+    </div>
+  </form>
+</div>

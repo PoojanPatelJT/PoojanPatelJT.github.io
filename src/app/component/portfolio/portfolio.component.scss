@@ -1,0 +1,197 @@
+.portfolio-menu ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 4px solid #eff0ff;
+}
+.portfolio-menu ul li {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 7px 30px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.portfolio-menu ul li::after {
+  background: #4c55c4;
+  bottom: -4px;
+  content: "";
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.portfolio-menu ul li.active:after {
+  opacity: 1;
+}
+.portfolio-slider {
+  overflow: hidden;
+}
+
+
+
+// .portfolio-slider-area .area-bg {
+//     background: rgba(0, 0, 0, 0) url("assets/img/bg-layers/area-map.png") no-repeat scroll center bottom;
+// }
+
+.breadcrumb {
+    padding: 0;
+}
+
+.portfolio-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 4px solid #eff0ff;
+}
+
+.portfolio-menu ul li {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 7px 30px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.portfolio-menu ul li::after {
+    background: #4c55c4;
+    bottom: -4px;
+    content: "";
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.portfolio-menu ul li.active {
+    color: #4c55c4;
+}
+
+.portfolio-menu ul li.active:after {
+    opacity: 1;
+}
+
+.portfolio-slider {
+    overflow: hidden;
+}
+
+.single-portfolio .single-portfolio-details {
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
+
+.portfolio-slider .single-portfolio-details {
+    margin: 20px 20px 50px;
+}
+
+.portfolio-details,
+.portfolio-bottom-details {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.portfolio-details {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(#8490e3), to(#2d1e9d)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(#8490e3, #2d1e9d) repeat scroll 0 0;
+    opacity: 0;
+    place-content: center;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.portfolio-bottom-details {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.portfolio-details h4,
+.portfolio-bottom-details h4 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.portfolio-details p {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.single-portfolio:hover .portfolio-details {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.single-portfolio:hover .single-portfolio-details {
+    -webkit-box-shadow: 0 32px 50px #accfeb;
+    box-shadow: 0 32px 50px #accfeb;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+.single-portfolio:hover .portfolio-bottom-details {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.portfolio-big-thumb {
+    background: #ff3d46 none repeat scroll 0 0;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 24px;
+    height: 60px;
+    margin-bottom: 30px;
+    padding-top: 17px;
+    text-align: center;
+    width: 60px;
+}
+
+.portfolio-big-thumb:hover,
+.portfolio-big-thumb:focus {
+    background: #ffffff none repeat scroll 0 0;
+    color: #ff3d46;
+}

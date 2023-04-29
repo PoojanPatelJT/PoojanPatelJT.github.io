@@ -1,0 +1,180 @@
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="text-center">
+        <div class="header-title mb-3">
+          <h2>Contact Us</h2>
+        </div>
+        <p>
+          Let's Discuss your project details in dept with our experts and get
+          quick solutions for your technical problems
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-md-12 col-lg-5 d-flex justify-content-around align-items-center"
+    >
+      <img
+        classs="img-fluid img-responsive"
+        width="100%"
+        src="assets/images/contact/side-image.png"
+        alt="contact-us"
+      />
+    </div>
+    <div class="col-lg-7 col-md-12 px-5 pt-5">
+      <form class="example-form" [formGroup]="contactUsForm">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 mb-1">
+            <mat-form-field class="example-full-width col-12">
+              <mat-label>First Name</mat-label>
+              <input
+                class="col-12"
+                type="text"
+                matInput
+                formControlName="firstName"
+                placeholder="First Name"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 mb-1">
+            <mat-form-field class="example-full-width col-12">
+              <mat-label>Last Name</mat-label>
+              <input
+                class="col-12"
+                type="text"
+                matInput
+                formControlName="lastName"
+                placeholder="Last Name"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 mb-1">
+            <mat-form-field class="example-full-width col-12">
+              <mat-label>Email Address</mat-label>
+              <input
+                class="col-12"
+                type="text"
+                matInput
+                formControlName="emailAddress"
+                placeholder="John@yahoomail.com"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 mb-1">
+            <mat-form-field class="example-full-width col-12">
+              <mat-label>Mobile No. </mat-label>
+              <input
+                class="col-12"
+                type="text"
+                matInput
+                formControlName="mobileNo"
+                placeholder="Mobile Number"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-1">
+            <mat-form-field class="example-full-width col-12 mr-2">
+              <mat-label>Subject</mat-label>
+              <input
+                class="col-12"
+                type="text"
+                matInput
+                formControlName="subject"
+                placeholder="subject"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-1">
+            <mat-form-field class="example-full-width col-12">
+              <mat-label>Message</mat-label>
+              <textarea
+                class="col-12"
+                matInput
+                placeholder="Write you Message"
+                rows="5"
+              ></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-1">
+            <re-captcha
+              formControlName="recaptcha"
+              (resolved)="resolved($event)"
+              siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"
+            ></re-captcha>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 my-3 d-flex justify-content-start">
+            <button
+              class="contact-submit-btn pe-auto"
+              [disabled]="!this.contactUsForm.valid"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="col-md-12 col-lg-4">
+      <div class="contact-info">
+        <h4 class="title">Contact info:</h4>
+        <p class="sub-title">We Are always plesent to help you</p>
+        <a (click)="selectedItem = 'adajanBranch'" class="cursor-pointer">
+          <div>
+            <span class="title-address">Main Branch:</span>
+            <p>
+              228, Second Floor, Green Elina, Nr. Sneh Sankul's Vadi, Anand
+              Mahal Rd, Giriraj Society, Adajan, Surat 395009, Gujarat, India
+            </p>
+          </div>
+        </a>
+        <a class="cursor-pointer" (click)="selectedItem = 'palBranch'">
+          <div>
+            <span class="title-address">Pal Branch:</span>
+            <p>
+              417, Sumerru Business Corner, Nr. Somchintamani Appt., B/H Rajhans
+              Multiplex, Pal Gam, Surat 395009, Gujarat, India
+            </p>
+          </div>
+        </a>
+        <p class="cursor-pointer" href="tel:9265712724">
+          <span>Mobile:</span> +91 9265712724
+        </p>
+        <p><span>E-mail:</span> info.jyotitechnosoft@gmail.com</p>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-8" #mapSection>
+      <iframe
+        *ngIf="selectedItem == 'adajanBranch'"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.849950595389!2d72.79385851529051!3d21.19811888590681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ad62b2491a66dc4!2sJyoti%20Technosoft!5e0!3m2!1sen!2sin!4v1586443823071!5m2!1sen!2sin"
+        class="map-section"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border: 0; border-radius: 20px"
+        tabindex="0"
+      >
+      </iframe>
+      <iframe
+        *ngIf="selectedItem == 'palBranch'"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1278184068738!2d72.78305117595066!3d21.18708078232079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dbae1416371%3A0x3345ded92523ceb6!2sJyoti%20Technosoft%20LLP!5e0!3m2!1sen!2sin!4v1682142289891!5m2!1sen!2sin"
+        class="map-section"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border: 0; border-radius: 20px"
+        tabindex="0"
+      ></iframe>
+    </div>
+  </div>
+</div>
