@@ -85,7 +85,6 @@
           }
         ]
       }
-    
     ]
   },
 
@@ -265,7 +264,7 @@
       ]
     }
   ],
-  "developmentProcess" :[
+  "developmentProcess": [
     {
       "index": 1,
       "title": "Requirement Gethering",
