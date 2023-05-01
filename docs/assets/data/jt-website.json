@@ -85,7 +85,6 @@
           }
         ]
       }
-    
     ]
   },
 
@@ -265,7 +264,7 @@
       ]
     }
   ],
-  "developmentProcess" :[
+  "developmentProcess": [
     {
       "index": 1,
       "title": "Requirement Gethering",
@@ -295,6 +294,39 @@
       "title": "Review from Clients",
       "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
       "imageSrc": "assets/images/development-process/workflowStep5.svg"
+    }
+  ],
+  "portfolio": [
+    {
+      "technology":"All"
+    },
+    {
+      "projectName":"Progress Maker",
+      "technology":"angular",
+      "description":"The comprehensive platform for Tool Optimization and progress management",
+      "logo":"assets/images/portfolio/ProgressMaker_Logo.png",
+      "backgroundImage":"assets/images/portfolio/progressmaker_background.png"
+    },
+    {
+      "projectName":"GWT",
+      "technology":"java",
+      "description":"The comprehensive platform for Tool Optimization and progress management",
+      "logo":"assets/images/portfolio/ProgressMaker_Logo.png",
+      "backgroundImage":"assets/images/portfolio/progressmaker_background.png"
+    },
+    {
+      "projectName":"GWT",
+      "technology":"java",
+      "description":"The comprehensive platform for Tool Optimization and progress management",
+      "logo":"assets/images/portfolio/ProgressMaker_Logo.png",
+      "backgroundImage":"assets/images/portfolio/progressmaker_background.png"
+    },
+    {
+      "projectName":"GWT",
+      "technology":"java",
+      "description":"The comprehensive platform for Tool Optimization and progress management",
+      "logo":"assets/images/portfolio/ProgressMaker_Logo.png",
+      "backgroundImage":"assets/images/portfolio/progressmaker_background.png"
     }
   ]
 }
